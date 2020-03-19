@@ -1,4 +1,6 @@
 
+[![Build Status](https://amitchauhan822.visualstudio.com/Space%20Game-Workflow/_apis/build/status/mslearn-tailspin-spacegame-web?branchName=master)](https://amitchauhan822.visualstudio.com/Space%20Game-Workflow/_build/latest?definitionId=13&branchName=master)
+
 # Contributing
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
