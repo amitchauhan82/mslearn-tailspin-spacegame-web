@@ -2,12 +2,9 @@ trigger:
 - '*'
 
 pool:
-  vmImage: 'AzureVMAgentPool'
+  vmImage: 'ubuntu-16.04'
   demands:
     - npm
-    - msbuild
-    - visualstudio
-    - vstest
 
 variables:
   buildConfiguration: 'Release'
