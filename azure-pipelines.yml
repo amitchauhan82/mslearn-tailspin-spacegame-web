@@ -2,7 +2,7 @@ trigger:
 - '*'
 
 pool:
-  vmImage: 'AzureVMAgentPool'
+  vmImage: 'az400buildagent'
   demands:
     - npm
 
