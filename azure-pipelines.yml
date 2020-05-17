@@ -5,6 +5,9 @@ pool:
   vmImage: 'AzureVMAgentPool'
   demands:
     - npm
+    - msbuild
+    - visualstudio
+    - vstest
 
 variables:
   buildConfiguration: 'Release'
