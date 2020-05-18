@@ -1,8 +1,5 @@
-trigger:
-- '*'
-
 pool:
-  vmImage: 'ubuntu-16.04'
+  name: 'AzureVMAgentPool'
   demands:
     - npm
 
@@ -26,7 +23,11 @@ steps:
   displayName: 'Compile Sass assets'
 
 - task: gulp@1
-  displayName: 'Run gulp tasks'
+  inputs:
+    gulpFile: gulpfile.js
+    targets: 'default'
+    enableCodeCoverage: false
+  displayName: 'Run Gulp tasks'
 
 - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
   displayName: 'Write build info'
