@@ -26,7 +26,8 @@ steps:
   displayName: 'Compile Sass assets'
 - task: gulp@1
   inputs:
-    targets: 
+    gulpFile: gulpfile.js
+    targets: 'default'
     enableCodeCoverage: false
   displayName: 'Run Gulp tasks'
 
